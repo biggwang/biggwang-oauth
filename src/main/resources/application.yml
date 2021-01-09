@@ -13,12 +13,16 @@ spring:
       javax.persistence.query.timeout: 10000
       hibernate.dialect: org.hibernate.dialect.MariaDBDialect
       org.hibernate.envers.audit_table_suffix: _history
-    hibernate:
-      format_sql: true
-      ddl-auto: none
-      connection:
-        charset: utf8
-        useUnicode: true
+      hibernate:
+        format_sql: true
+        ddl-auto: none
+        connection:
+          charset: utf8
+          useUnicode: true
+security:
+  oauth2:
+    jwt:
+      signkey: 123@#$
 
 #  autoconfigure:
 #    exclude:
