@@ -10,15 +10,13 @@ import org.springframework.security.oauth2.config.annotation.configurers.ClientD
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
-import org.springframework.security.oauth2.jwt.JwtClaimAccessor;
-import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
 import javax.sql.DataSource;
 
 /**
  * id/password 기반 Oauth2 인증을 담당하는 서버
- * 다음 endpont가 자동 생성 된다.
+ * 다음 endpoint가 자동 생성 된다.
  * /oauth/authorize
  * /oauth/token
  */
